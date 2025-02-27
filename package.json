@@ -1,40 +1,128 @@
 {
-  "name": "poe2-overlay",
-  "version": "1.0.1",
-  "private": true,
-  "scripts": {
-    "dev": "node build/script.mjs",
-    "build": "tsc --noEmit && node build/script.mjs --prod",
-    "package": "electron-builder build"
-  },
-  "author": {
-    "name": "Popa Razvan Dragos"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/poparazvandragos/PoE2Overlay.git"
-  },
-  "main": "dist/main.js",
-  "dependencies": {
-    "electron-chrome-extensions": "^4.0.0",
-    "electron-overlay-window": "3.3.0",
-    "uiohook-napi": "1.5.x"
-  },
-  "devDependencies": {
-    "@types/ini": "^4.1.0",
-    "@types/node": "20.x.x",
-    "@types/ws": "^8.5.3",
-    "@wokwi/bmp-ts": "^3.0.0",
-    "comlink": "^4.3.1",
-    "electron": "31.3.1",
-    "electron-builder": "24.13.3",
-    "electron-updater": "^6.1.0",
-    "esbuild": "^0.23.0",
-    "ini": "^4.0.0",
-    "typescript": "5.5.x",
-    "ws": "^8.16.0"
-  },
-  "engines": {
-    "node": ">=16"
-  }
+	"WBUI2":
+	{
+		"settings":
+		{
+			"openbutton": 1,
+			"hideicon": false,
+			"hideiconafter": 60,
+			"iconurl": "https://www.dropbox.com/scl/fi/lni1xevl57yy1j8t2eppi/OZ6xOjY.png.png?rlkey=h61vliycpvqm3fsrmvyk6719t&st=1vwlcs95&dl=1",
+			"disableicontext": false,
+			"iconposition": 2,
+			"icontextcolor": 8,
+			"openonstart": true,
+			"openonstartonlynewplayers": false,
+			"updateinterval": 12
+		},
+		"tabs": [
+			{
+				"layout": 1,
+				"buttontext": "Welcome",
+				"imageurl": "https://www.dropbox.com/scl/fi/lni1xevl57yy1j8t2eppi/OZ6xOjY.png.png?rlkey=h61vliycpvqm3fsrmvyk6719t&st=1vwlcs95&dl=1",
+				"content": [
+					{
+						"title": "Welcome to www.Ltolt.com-Lets Try One Last Time!!",
+						"text": "                                                             Welcome to LTOLT - Lets Try One Last Time\r\nFor all Information, Rules, Mod Info press F2\r\nFor Shop press F1\r\nFor Online shop and VIP please visit Website.\r\nIf you have any kind of Issues please contact us per Discord or support@LTOLT.com Email.\r\nBecause there is people who feel forced to join DISCORD just to learn about server, I tried my best to provide all possible information about server in this panel.\r\n\r\n                                                               THERE IS 5 ROLES INGAME FOR POINTS\r\n1.Normal Role which everyone get - 50points per 15min\r\n2.Discord role you get by Link Ingame with Discord - 75points per 15min\r\n3.VIP (Online Store) - 100points per 15min\r\n4.Premium (Online Store) - 150points per 15min\r\n5.Elite (Online Store) - 200 points per 15min\r\n5.Vip, Premium, Elite comes with 10% for Ingame Shop Discount.\r\n\r\n\r\nCluster is  still in Testing period. After first wipe, before second, there gonna be changes within game: ex. Custom Caves, Mod Balance, Shop Rebalance to change Items, dinos, kits you can buy and levels - goal Is to make least pay to win as possible.\r\n\r\nAutomated events will be added in future Wipes, for ex:\r\nLoot the Vault event, where once a day Vault with Zone will be spawned and players will have chance fight for loot.\r\nRare dino spawns, where once a day rare dino will spawn with high stats and players will have chance to fight for chance to Tame it.\r\n\r\nImportant Info:\r\nDino Wipe: Once a day UTC-12:00\r\nServer Restart: Once a Day UTC-00:00\r\n\r\nLooking for Discord Mod, Cluster Admin. - Please contact me in Discord."
+					}
+				]
+			},
+			{
+				"layout": 2,
+				"buttontext": "Server Rates/Info",
+				"imageurl": "https://www.dropbox.com/scl/fi/lni1xevl57yy1j8t2eppi/OZ6xOjY.png.png?rlkey=h61vliycpvqm3fsrmvyk6719t&st=1vwlcs95&dl=1",
+				"content": [
+					{
+						"title": "Rates/Stats",
+						"text": "                Server Rates:\r\n7x Exp.\r\n10x Gather - Harvest.\r\n\r\n                 Taming Rates:\r\nPassive Tame Interval 100x\r\nTaming Speed Multiplier 100x\r\n\r\n                  Breeding, Baby, Egg settings:\r\nBaby Mature Speed - 100x\r\nBaby Imprint Stat Scale - 1.15x\r\nEgg Hatch Speed - 100x\r\nLay Egg Interval - 50x\r\nMating Interval - 0.05x\r\nMating Speed - 50x\r\n\r\n                 Tribe Settings:\r\nMax Numb Of Players In Tribe - 4x\r\nNo Ally.\r\n\r\n                  Player Stat per LVL Adjustments:\r\nStamina - 1.5x\r\nOxygen - 5x\r\nFood - 5x\r\nWater - 5x\r\nWeight - 1000x\r\nMelee - 2x\r\nFortitude - 10x\r\nCrafting - 10x\r\n\r\n                  Dino Stat Per LVL Adjustments:\r\nWeight - 1000x\r\n  \r\n                 Other random Changed Settings:\r\nNight Time Speed 5\r\nFood Water Drain 0.5\r\nHealth Recovery 2x\r\nFishing Loot Quality 3X\r\nCrop Growth Speed 5X\r\nTurret Limit 200\r\n"
+					},
+					{
+						"title": "Extra Info",
+						"text": "All drops are Random Chance and random amount, except White(starter).\r\n\r\n\r\nWhite       - Starter Flak set\r\nWhite+     - Better Flak starter set\r\nGreen       - Artifacts and Tributes\r\nGreen+     - More Artifacts and Tributes\r\nBlue          - Kibbles, Brews, Cakes and etc.\r\nBlue+        - More Kibbles, Brews, Cakes and etc.\r\nPurple, Purple+ - Weapons (10% to be BP) and Ammo.\r\nYellow, Yellow+ - Saddles, Armor (10% to be BP)\r\nRed          - Armor Bp\r\nRed+        - Saddle BP\r\n\r\nCaves, Underwater and all other form of loot - crates are Default. Just sky beacon loot Is changed.\r\nSo If you cant find something In sky beacons or quality Is too low, you can farm caves for blueprints and etc.\r\n\r\nBeaver dams - Rare flower, Rare mushroom, Black pearls, Cementing paste, Wood, Silica pearls.\r\n\r\nBoss drops - More Element, All bosses drops Black pearl as well. From Alpha boss 100% one blueprint drop which Is\r\nFlak, Pump, Fb Sniper, Compownd Bow and etc. Depends on your own luck what you will get."
+					}
+				]
+			},
+			{
+				"layout": 3,
+				"buttontext": "Rules",
+				"imageurl": "https://www.dropbox.com/scl/fi/lni1xevl57yy1j8t2eppi/OZ6xOjY.png.png?rlkey=h61vliycpvqm3fsrmvyk6719t&st=1vwlcs95&dl=1",
+				"content": [
+					{
+						"title": "Rules",
+						"text": "1. GENERAL RULES\r\n1.1 Speak English\r\n1.2 Insiding is strictly forbidden \r\n1.3 Hacks, exploits, duping, meshing, lag attempts, cheating, aimbotting is banned\r\n1.4 Admins are not obliged to give back any property or dinos lost due to any in-game situation/bugs/lag\r\n1.5 Stacking Dinos is forbidden\r\n1.6 Scam on trades & bosses is bannable please record your trades\r\n1.7 Real money trade : lifetime ban\r\n1.8 No impersonating admins or other players.\r\n1.9 No shop points refunds for any reason.\r\n1.10 Toxicity is not allowed. Friendly PVP trash talk is ok, getting personal with insults is not accepted and can get you banned. We are not promoting a toxic PvP environment.\r\n\r\n\r\n2. PVP RULES\r\n2.1 Teaming is not allowed : Join raid, defending an other tribe from an attack, coordinated world attack. (Boss fights, trading is OK)\r\n2.2 Counter fobbing is allowed. 3rd party attackers MUST continue raid. But if they \"protect\", same tribe for more than once (during the entire wipe), they will get a warning.\r\n2.3 No holding a player hostage for longer than 1h. However, during a raid, the imprisoned player can be held hostage during the entire raid. This rule only applies to the map the raid is happening on.\r\n2.4 Mesh biting with Titan, Velo, Giga, Carcha, Arthro and etc.\r\n2.5 Using the forcefield to block a player or a dino is forbidden\r\n2.6 No placing structures on top of you or another's player making them completely concealed, immobilized or invulnerable \r\n2.7 Tribes causing server performance issues like lag, crashes and etc. Will be banned with a warning depending on the circumstance. It is your responsibility to make sure your base does not cause lag when being raided or picked up.\r\n\r\n\r\n3. BUILDING RULES\r\n3.1 Do not build in knock-out, zipline, grappling hook, kaprosuchus/pelagronis, mesh or chair spots\r\n3.2 Do not build in a mesh spot. If your spot have an access to the mesh, it's forbidden\r\n3.3 Open turrets are allowed on active PVP/farming only\r\n3.4 Use tunnels/structures, walls, ceilings to bypass turrets is forbidden (doesn't apply on platform saddle)\r\n3.5 Floating structures is forbidden (except turrets in the middle of hatchframes) \r\n3.6 Abusing stacking structures is prohibited - No pillar on vault, no staking vaults, etc.\r\n3.7 You can not use this type of structures in your spam or cave entrance : More than 2 vaults, Cryofridges, Transmitters, Pillar + Vaults on it, Raft etc.\r\n3.8 Snap structures to the world border is forbidden\r\nDo not block XP notes.\r\n3.9 Fobs must be cleared if inactive. If a fob has not been used for over 24 hours it must be removed.\r\n3.10 No building or aggressive dinos whatsoever @ any of the following locations: Obelisks, Wyvern Nests/Egg Spawns​, Spawn Zones.New Text"
+					},
+					{
+						"title": "Discord Rules",
+						"text": "4. DISCORD RULES\r\n4.1 All channels must be used appropriately and solely for their intended use.\r\n4.2 Advertisement or promotional communication of other communities or clusters is completely forbidden.\r\n4.3 Pornographic, gore and explicit content or media is completely forbidden.\r\n4.4 Revealing people personal information is completely forbidden.\r\n4.5 Sharing of cheat software or in-game exploits is completely forbidden.\r\n4.6 Hard insults, racket, racism... in discord will be severely punished. There is a salt channel for trashtalk but this rule still apply on this channel.\r\n4.7 Admins always have the final word. Rudeness, insults, abuse of personal messages, @ping or complaints will not be tolerated and can be punished with anything up to a ban."
+					},
+					{
+						"title": "Guidance",
+						"text": "Failure to follow the rules will result in punishment or server bans. We care about our community and do everything to protect it. You can submit a violation report by opening a ticket on Discord and an admin will assist you. Please provide a video or screen shot of the violation as proof so that the report may be investigated and the responsible player held accountable. \r\n\r\nDisrespect to a staff member will not be tolerated whatsoever. We work hard to bring a community to our cluster, and all of our Admins are impartial and prejudice free. We respect the player's time and hard work.\r\n\r\n- Please report any breach of these rules/conduct to Admins/Moderators \r\n- Follow all Wildcard Code of Conduct\r\n- Players not following rules may be banned without warning.\r\n- Use the rule number when reporting. (ex. 1.1, 2.1)\r\n​- Report using a discord ticket or the support email."
+					}
+				]
+			},
+			{
+				"layout": 2,
+				"buttontext": "Mod Info",
+				"imageurl": "https://www.dropbox.com/scl/fi/lni1xevl57yy1j8t2eppi/OZ6xOjY.png.png?rlkey=h61vliycpvqm3fsrmvyk6719t&st=1vwlcs95&dl=1",
+				"content": [
+					{
+						"title": "Mods",
+						"text": "Pelayori's Cryo Storage\r\nAutomated Ark\r\nARKomatic\r\nCybers Structures Qol+\r\nSolo Farm Mod\r\nCrafting Skill Potion\r\nEasy Transferable Element\r\nAutoDoors\r\nINX Cave Builder\r\nW Shop UI\r\nTG Stacking Mod 1000-90\r\nBrowser button & QR code\r\nSuper Spyglass Plus\r\nWBUI2\r\nAdmin Commands I Gaia Studios\r\n\r\n\r\n\r\n(Important)\r\n\r\nTribe Enforcer"
+					},
+					{
+						"title": "Tribe Enforcer(Important)",
+						"text": "Tribe Enforcer\r\n\r\n1. A tribe created on a map will automatically be created on any other map when a tribe member joins the new map on the cluster.\r\n2. A tribe member invited on Server A will be auto added to the Tribe on Server B upon joining the map. No, longer do tribes have to invite players on every map to be in the same tribe.\r\n3. Kicking a player from the tribe will kick them cluster wide from the tribe.\r\n4. Ability to Promote/Demote Tribe Admins across the cluster.\r\n5. Renaming the tribe will happen cluster wide\r\n6. Handles merging tribes with structures on other maps even if invited on another map when the \"owning\" player joins back to that server and is added to the new tribe.\r\n7. This will also handle enforcing tribe size cluster wide preventing having different players on different maps.\r\nTribe names are now reserved cluster wide upon tribe creation so it may not be used on another map by another tribe.\r\n\r\n"
+					}
+				]
+			},
+			{
+				"layout": 1,
+				"buttontext": "Online Store Info",
+				"imageurl": "https://www.dropbox.com/scl/fi/lni1xevl57yy1j8t2eppi/OZ6xOjY.png.png?rlkey=h61vliycpvqm3fsrmvyk6719t&st=1vwlcs95&dl=1",
+				"content": [
+					{
+						"title": "Online Store Info",
+						"text": "You can visit Online Store From buttom \"Online Store\" in bottom of this panel. By going to www.ltolt.com or ltolt.tip4serv.com\r\nIf you need EOSID you can get in 3 ways:\r\n1. If you go to Online Store from F1 Ingame Shop you will be redirected with EOSID attached to your URL.\r\n2. Press R and pick EOSID HELPER and panel with your EOSID will appear\r\n3. In Discord go to #player-panel and press on \"Get Your EOSID\" and will appear in chat (Dont worry, just you can see message)\r\n\r\n\r\n                                                                              IMPORTANT ONLINE STORE ADVICES AND RULES\r\n\r\nPLEASE READ BEFORE USING STORE\r\n1. Because In store sold goods are Digital, and because of transfer fees, by any means and circumstances money will not be refunded.\r\n2. For any issues please contact Admin in Discord or contact by email support@LTOLT.com\r\n3. Sold Items are not subscription.\r\n4. Do not buy more than one Item ex: Dont buy 500points x2. Buy Once, wait and than you can buy again.\r\n5. Do not buy Month membership if you have weekly. By commands I just add player in to TIMED group so I cant increase timer on the group which you already have ex: If you bought VIP for week, check Ingame command /groups and wait till time on VIP group will run out to buy again.\r\nIf you do not wait ex: You bought VIP 4days ago, you still have 3 left, than you buy month on the same group - Result: YOU STILL HAVE 3 DAYS LEFT\r\n6. There is 2 type Week and Month Membership, One come WITH DISCORD SUPPORTER ROLE, and one WITHOUT - For people who do not want show themeselves in discord as supporters."
+					}
+				]
+			},
+			{
+				"layout": 1,
+				"buttontext": "Discord Link Info",
+				"imageurl": "https://www.dropbox.com/scl/fi/lni1xevl57yy1j8t2eppi/OZ6xOjY.png.png?rlkey=h61vliycpvqm3fsrmvyk6719t&st=1vwlcs95&dl=1",
+				"content": [
+					{
+						"title": "Discord Connect Info",
+						"text": "You want connect Ingame acc with Discord for more points? Thats what you need to do.\r\nPress \"Discord\" in bottom of this pannel.\r\nAnd go to #Discord Sync Information\r\nOr go stright to #Player Panel, press \"Link Discord\", you will get short code.\r\nCopy that code, come back Ingame and type command in chat /setdiscord (your code). ex: /setcode ******"
+					}
+				]
+			},
+			{
+				"layout": 1,
+				"buttontext": "Ingame Shop Info",
+				"imageurl": "https://www.dropbox.com/scl/fi/lni1xevl57yy1j8t2eppi/OZ6xOjY.png.png?rlkey=h61vliycpvqm3fsrmvyk6719t&st=1vwlcs95&dl=1",
+				"content": [
+					{
+						"title": "Ingame Shop Info",
+						"text": "THERE IS 5 ROLES INGAME FOR POINTS\r\n\r\n1.Normal Role which everyone get - 50points per 15min\r\n2.Discord role you get by Link Ingame with Discord - 75points per 15min\r\n3.VIP (Online Store) - 100points per 15min\r\n4.Premium (Online Store) - 150points per 15min\r\n5.Elite (Online Store) - 200 points per 15min\r\n5.Vip, Premium, Elite comes with 10% for Ingame Shop Discount.\r\n\r\n\r\nPay To Win Counter Measures.\r\nTo Avoid for server become FULL Pay To Win Server, these counter measures was applied in to Ingame Shop.\r\n1. First 24hours after wipe all Blueprints are Unavailable in Shop.\r\n2. Blueprint have 10% chance to be Ascendant 40% chance Journeyman and 50% chance Mastercraft in shop.\r\n3. All Base Kits Unavailable 24hours after wipe.\r\n5. Added Element, Boss Trophy, Boss Flag SELL in Shop for points.\r\n6. Some Important dinos first 24 hours after Wipe is unavailable in shop. Dino List Below:\r\n   1. Giga\r\n   2. Carcha\r\n   3. Stego\r\n   4. Trike\r\n   5. carbonemys\r\n   6. Maewing\r\n   7. Reaper\r\n   8. RockDrake\r\n   9. Rhyniognatha\r\n   10. Snow Owl\r\n7. Most Dinos is 224lv but Important BIG Dinos is lowered. List below:\r\n   1. Carcha 160 - 200lvl\r\n   2. Giga 160 - 200lvl\r\n   3. Reaper 160 - 200lvl\r\n   4. Rock Drake 140 - 170lvl\r\n   5. Rhyniognatha 160 - 200lvl"
+					}
+				]
+			}
+		],
+		"links": [
+			{
+				"text": "Website",
+				"url": "https://www.ltolt.co.uk/"
+			},
+			{
+				"text": "Online Store",
+				"url": "https://ltolt.tip4serv.com/"
+			},
+			{
+				"text": "Discord",
+				"url": "https://discord.gg/nwn8xdqNYx"
+			}
+		],
+		"version": 2
+	}
 }
